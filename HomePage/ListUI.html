@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+	<style type="text/css">
+		.top_imgs {
+			display: block;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+
+		.now_time {
+			display: none;
+			width: 0%;
+			height: 0%;
+			position: fixed;
+			top: 0;
+			z-index: 1000;
+			font-size: 14px;
+			/* font-style: Serif; */
+			font-family:  -apple-system-font,"Helvetica Neue",sans-serif;
+			/* font-weight:100; */
+		}
+
+		/* body {
+			height: 2000px;
+		} */
+	</style>
+
+	<script type="text/javascript">
+		onload = function () {
+			var dh = document.documentElement.scrollHeight || document.body.scrollHeight;
+			window.scrollTo(0, (dh - screen.availHeight) / 2 - 1000);
+		}
+	</script>
+
+
+
+
+	<title>首页</title>
+</head>
+
+<body>
+
+
+
+	<div class="top_img" style="margin-top: 0%; left: 0; margin-bottom: -25%;">
+		<img src="./HomePage_files/ListUI_1.jpg" width="100%">
+		<a href="https://jarrett-98.github.io/Wechart-GoouttoApply/HomePage/HomePage.html"><img src="./HomePage_files/ListUI_2.jpg" width="100%"></a>
+		<img src="./HomePage_files/ListUI_3.jpg" width="100%">
+	</div>
+
+
+	<!-- <div class="top_imgs">
+		<div class="top_time_img">
+			<img src="./HomePage_files/top_time_2_img.jpg" width="100%">
+		</div>
+		<div class="top_img" style="margin-top: -1.5%;">
+			<img src="./HomePage_files/ListUI_0.jpg" width="100%">
+		</div>
+	</div> -->
+
+	<!-- <div class="now_time" style="display: block; margin-top: 4%; margin-left: 4.2%;"></div> -->
+	
+	<!-- 让整个页面不能修改 -->
+	<div class="disabled_mask" style="display: block; margin-top: 20%;"></div>
+
+	<!-- <script type="text/javascript">
+		const format3 = (date) => `${String(date.getHours()).padStart(2, '0')}:${String(date.getMinutes()).padStart(2, '0')}`
+		document.querySelector('div.now_time').innerHTML = format3(new Date())
+
+	</script> -->
+
+
+
+</body>
+
+</html>
